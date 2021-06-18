@@ -1,0 +1,85 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?38b3625b82f021b7b20f201609dd20d8") format("truetype"),
+url("./flaticon.woff?38b3625b82f021b7b20f201609dd20d8") format("woff"),
+url("./flaticon.woff2?38b3625b82f021b7b20f201609dd20d8") format("woff2"),
+url("./flaticon.eot?38b3625b82f021b7b20f201609dd20d8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?38b3625b82f021b7b20f201609dd20d8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "barbell": "\f101",
+    "gym": "\f102",
+    "dumbbells": "\f103",
+    "lunges": "\f104",
+    "dumbbells-1": "\f105",
+    "heart-rate": "\f106",
+    "workout-machine": "\f107",
+    "fitness": "\f108",
+    "hinduist-yoga-position": "\f109",
+    "buddhist-yoga-pose": "\f10a",
+    "yoga-position": "\f10b",
+    "yoga-posture": "\f10c",
+    "boxing-gloves": "\f10d",
+    "bicycle": "\f10e",
+    "massage-spa-body-treatment": "\f10f",
+);
+
+.flaticon-barbell:before {
+    content: map-get($flaticon-map, "barbell");
+}
+.flaticon-gym:before {
+    content: map-get($flaticon-map, "gym");
+}
+.flaticon-dumbbells:before {
+    content: map-get($flaticon-map, "dumbbells");
+}
+.flaticon-lunges:before {
+    content: map-get($flaticon-map, "lunges");
+}
+.flaticon-dumbbells-1:before {
+    content: map-get($flaticon-map, "dumbbells-1");
+}
+.flaticon-heart-rate:before {
+    content: map-get($flaticon-map, "heart-rate");
+}
+.flaticon-workout-machine:before {
+    content: map-get($flaticon-map, "workout-machine");
+}
+.flaticon-fitness:before {
+    content: map-get($flaticon-map, "fitness");
+}
+.flaticon-hinduist-yoga-position:before {
+    content: map-get($flaticon-map, "hinduist-yoga-position");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-yoga-position:before {
+    content: map-get($flaticon-map, "yoga-position");
+}
+.flaticon-yoga-posture:before {
+    content: map-get($flaticon-map, "yoga-posture");
+}
+.flaticon-boxing-gloves:before {
+    content: map-get($flaticon-map, "boxing-gloves");
+}
+.flaticon-bicycle:before {
+    content: map-get($flaticon-map, "bicycle");
+}
+.flaticon-massage-spa-body-treatment:before {
+    content: map-get($flaticon-map, "massage-spa-body-treatment");
+}

@@ -1,0 +1,727 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family:calibri,'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/* GENERAL STYLINGS */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:active  {
+    color:yellow;
+    background-color:transparent;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.step{
+    font-size: 4rem;
+}
+
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0px 0px;
+    align-content: center;
+    justify-content: center;
+}
+.left-nav{
+    width: 25%;
+    background-color: rgb(220, 20, 60);
+    margin: 0px 5px;
+}
+.content{
+    width: 75%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.main{
+    box-sizing: content-box;
+    width: 100vw;
+    background-color:  rgba(36, 3, 30, 0.123)
+}
+
+
+/* LANDING PAGE/HEADER STYLING */
+header{
+    width: 100%;
+}
+
+.header-container{
+    height: 100vh;
+    margin: 0;
+    padding: 0 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 100%), url(./images/h-bg12.png) center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: solid rgba(255, 255, 255, .2) 1px;
+}
+
+.nav-brand{
+    width: 8rem;
+    margin: 0 2rem;
+}
+
+.nav-list{
+    width: initial;
+    height: initial;
+    position: initial;
+    top: initial;
+    right: initial;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.nav-menu{
+    margin: 0 2.5rem;
+}
+
+.nav-link,
+.current{
+    color: #fafafa;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+.nav-link::before,
+.current::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    background-color: #ff0000;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+}
+
+.current::before{
+    transform: scaleX(1);
+}
+.nav-link:hover::before{
+    transform: scaleX(1);
+}
+
+.header-title{
+    width: 100%;
+    max-width: 60rem;
+    margin-top: 6rem;
+}
+
+.index-title{
+    font-size: 7rem;
+    margin: 1rem 4rem;
+    transform: translateY(25%);
+    transition: cubic-bezier(0.86, 0, 0.07, 1) 5s;
+}
+
+.h-started{
+    width: initial;
+    height: initial;
+    position: relative;
+    top: 12rem;
+    right: initial;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+}
+
+/* BUTTONS GENERIC STYLING*/
+.btn{
+    background-color: #ff0040;
+    border-radius: .5rem;
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+    transition: ease-in-out 200ms;
+}
+.btn:hover{
+    background-color: #af002c;
+}
+.login-btn{
+    padding: 10px 15px;
+}
+.follow-btn{
+    margin-left: 25%;
+    padding: 4px 60px 4px 60px;
+}
+
+.inst-f{
+    padding: 4px 48px 4px 48px;
+}
+
+.ytb-f{
+    padding: 4px 40px 4px 40px;
+}
+.h-btn{
+    width: 100px;
+    position: relative;
+    margin: -2rem 2rem 0 0rem;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border: 2px #ff0040 solid;
+    border-radius: 20px;
+    animation: head 5s linear infinite forwards;
+}
+
+.red{
+    background-color: #ff0040;
+}
+@keyframes head{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: rotate(0deg) scale(1.1);
+      }
+    100%{
+        transform:scale(1);
+    }
+    
+}
+
+.h-btn:hover{
+    background-color: #c40031;
+    transform: scale(1.1);
+    border: 2px #c40031 solid;
+}
+.sign-up-btn{
+    margin: 5rem 0rem 0rem 0rem;
+}
+
+
+
+/* HEADER/LANDING PAPGE TITLE */
+
+.MOTTO{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.9rem;
+    margin: 0rem 5rem;
+    transform: translateY(200%);
+    color: #afafaf;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 5s;
+}
+
+
+
+/* TITLE/HEADINGS GENERIC STYLINGS */
+.title-heading{
+    text-align: center;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, .7);
+    height: 9vh;
+}
+
+.title-heading h3{
+    margin-top: 5rem;
+    font-family: Lucida Handwriting, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: crimson;
+}
+.title-heading h1{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4rem;
+    margin: 1rem 0 1rem;
+    color: crimson;
+}
+
+.title-heading p{
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    align-content: center;
+}
+
+.register-h{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem !important;
+    margin: 1rem 0 1rem;
+    color: crimson;
+}
+
+.programs-grid-item h1{
+    font-size: 2.2rem;
+}
+
+
+/* GET-STARTED GRID */
+
+.get-started-grid{
+    margin: 10px 5rem;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, mimax(25rem, 1fr));
+    grid-gap: 2.5rem;
+}
+.get-started-grid-item p{
+    color: rgb(0, 0, 0, .7);
+}
+.h-moticon{
+    width: 0px;
+    height: 0px;
+}
+.no{
+    width: 50px;
+    height: 50px;
+    background: url(./images/str.png) center no-repeat;
+    background-size: contain;
+    display: inline-flex;
+    animation: no 1s linear infinite forwards;
+}
+
+@keyframes no{
+   0%{
+       transform: rotate(0deg);
+   }
+   50%{
+       transform: scale(1.1);
+   }
+    
+}
+
+.call-to-action{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+
+/* OUR PROGRAMS GRID */
+
+.programs{
+    width: 100%;
+}
+
+.programs-grid{
+    height: 100%;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, mimax(25rem, 1fr));
+    grid-gap: 8rem;
+    justify-content: center;
+    text-align: center;
+    margin: 8rem 10rem;
+    align-items: center;
+}
+.programs-grid-item{
+    border: #ffffff solid 2px;
+    padding: 2rem;
+    border-radius: 3rem;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    transition: ease-in-out 1s;
+}
+.programs-grid-item:hover{
+    cursor: pointer;
+    transform: scale(1.06) rotate(3deg);
+    box-shadow:  0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+/* JOIN US NOW/REGISTER SECTION */
+.container1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem;
+}
+.empty{
+    width: 20%;
+    background-color: #000000;
+    align-self: flex-end;
+    border-top-right-radius: 3rem;
+    margin-bottom: 1%;
+}
+
+.empty1{
+    width: 40%;
+    height: 100%;
+    padding-top: 4%;
+}
+.moticon{
+    margin: 8% 0;
+}
+.r-moticon1{
+    width: 0px;
+    height: 0px;
+}
+.register{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* CONTACT FORM */
+.c-form-container{
+    margin: auto;
+}
+form{
+    font-size: 1.5rem;
+}
+label{
+    font-family: calibri;
+}
+label[for=Login]{
+    color: #575757;
+    text-align: center;
+    margin: auto;
+}
+
+input[type=password],
+input[type=text],
+input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #af002c;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ff0040;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+input[type=submit]:hover {
+    transform: none;
+    background-color: #af002c;
+}
+
+input:focus{
+    outline: none;
+}
+
+.contact-h{
+    height: 100%;
+    text-align: center;
+    margin-bottom: 8%;
+    font-size: 2rem;
+    margin-top: 13%;
+}
+
+div.contact-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 30rem;
+    height: 100%;
+    border-radius: 5px;
+    border:  solid 1px#ccc;
+    padding: 40px;
+    margin-left: 7rem;
+    /* margin-bottom: auto; */
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, .4);
+}
+input:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+/* END OF JOIN US STYLING */
+/* <___________________________________________________> */
+
+
+/* TRAINERS GRID */
+.trainers{
+    width: 100%;
+    height: 100%;
+}
+.our-trainers{
+    margin: 0rem 0rem 5rem 0rem;
+}
+.trainers-container{
+    margin: 10rem 0 10rem 0;
+    
+}
+.trainers-grid{
+    margin: 0rem 10rem 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, mimax(25rem, 1fr));
+    grid-gap: 5rem; 
+    justify-content: center;
+    text-align: center;
+}
+.trainers-grid-items{
+    height: 29rem;
+    padding: 1.5rem;
+    color: #fafafa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    width: 30rem;
+    
+}
+.trainers-grid-items h1{
+    color: black;
+    font-size: 2rem;
+    padding: 0 0 0 0;
+}
+.trainers-grid-items span{
+    color: black;
+    font-size: 1.8rem;
+    padding: 0 0 0 0;
+}
+.trainers-grid-items::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 3px /* linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(5, 3, 36, 0.8) 100%)*/; 
+    z-index: -1;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background: url(./images/dauda.jpg) center no-repeat;
+    background-size: 35rem;
+}
+.cover1{
+    width: 100%;
+    height: 100%;
+    background: url(./images/Fitness-man-HD-picture-08.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.cover2{
+    width: 100%;
+    height: 100%;
+    background: url(./images/GettyImages-1129301601_thumb-732x549.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+.activities-grid span{
+    font-size: 2rem;
+}
+ 
+
+
+/* TESTIMONIALS SECTION STYLING */
+.testimonials{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(194, 5, 37) 0%, rgba(5, 3, 36) 100%);
+    background-size: cover;
+    position: relative;
+}
+.testimonial{
+    color: #fafafa;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.testimonial-text-box{
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.quote{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 13rem;
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .7;
+    z-index: -1;
+    color: crimson;
+}
+.testimonial-customer img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: crimson solid 5px;
+}
+
+/* CONTACT US */
+.container11{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem;
+}
+.contact-us{
+    width: 100vw;
+    height: 90vh;
+}
+.c-moticon{
+    margin-top: 150px;
+}
+
+.contact-us-form{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 100%;
+        border-radius: 5px;
+        /* border:  solid 1px#ccc; */
+        padding: 40px;
+        box-shadow: 4px 10px 10px rgba(0, 0, 0, .4);
+}
+
+
+/* ABOUT US */
+.about-us{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(194, 5, 37, 0.999) 0%, rgba(5, 3, 36, 0.8) 100%), url(./images/Tip-Total-Body-Training-vs-Body-Part-Splits.jpg) center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* FOOTER */
+.grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+footer{
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    background-color: #0f0f0f;
+    text-align: center;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+footer h1, 
+footer p,
+footer a{
+    font-size: 1.8rem;
+    color: #ff0040;
+}
+
+footer a,
+footer p{
+    padding: 0 2rem;
+}
+
+.socials{
+    width: 16px;
+}
+.twt{
+    padding-right: 4rem;
+}
+.ytb{
+    padding-right: 3.2rem;
+}
+.fb{
+    padding-right: 2.5rem;
+}
+
+.cpy-right-container{
+    background-color: #000;
+    padding: 1rem;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0, 0.555);
+    border-radius: 10px;
+  }
+
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0;
+  }
+
+/*Trying code*/
